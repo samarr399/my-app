@@ -11,13 +11,13 @@ pipeline {
 
 	stages {
 
-		stage('Build'){
+		stage('Install Node'){
 			steps {
 				sh "apt-get install node"
 			}
 		}
 
-		stage('Install'){
+		stage('Install NPM'){
 			steps{
 				sh "npm install"
 			}
