@@ -23,7 +23,7 @@ pipeline {
 			}
 		}
 
-		stage('Install'){
+		stage('Build'){
 			steps{
 				sh "npm build"
 			}
