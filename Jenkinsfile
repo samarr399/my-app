@@ -16,7 +16,7 @@ pipeline {
 
 		stage('Deploy') {
 			steps {
-				bat "xcopy build\* D:\Servers\nginx-1.25.5\html /E /Y"
+				bat 'xcopy "build\*" "D:\Servers\nginx-1.25.5\html" /E /Y'
 			}
 		}
 	}
